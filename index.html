@@ -20,21 +20,33 @@
         header {
             background: #F9F9F7;
             color: #4A4A4A;
-            padding: 1rem 0;
+            padding: 2rem 0; /* Increased padding slightly for better spacing */
             text-align: center;
         }
 
         .logo {
-            max-width: 200px;
+            max-width: 150px; /* Adjusted size slightly for the PNG icon */
             height: auto;
             margin: 0 auto;
             display: block;
         }
+        
+        /* Added style for the new text title since the PNG doesn't have text */
+        .brand-name {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 2.5rem;
+            color: #4A4A4A;
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            font-weight: normal;
+        }
 
         .header-tagline {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #748C68;
-            margin-top: 0.5rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav {
@@ -135,7 +147,12 @@
 </head>
 <body>
     <header>
-        <img src="logo.svg" alt="The Humble Hands Cleaning Co. Logo" class="logo">
+        <!-- CHANGED: Linked to logo.png -->
+        <img src="logo.png" alt="The Humble Hands Cleaning Co. Logo" class="logo">
+        
+        <!-- ADDED: Company Name text (Because the PNG is just an icon) -->
+        <h1 class="brand-name">The Humble Hands</h1>
+        
         <p class="header-tagline">Professional Home Cleaning & Organizing Services</p>
     </header>
 
