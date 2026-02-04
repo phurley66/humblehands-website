@@ -20,18 +20,17 @@
         header {
             background: #F9F9F7;
             color: #4A4A4A;
-            padding: 2rem 0; /* Increased padding slightly for better spacing */
+            padding: 2rem 0;
             text-align: center;
         }
 
         .logo {
-            max-width: 150px; /* Adjusted size slightly for the PNG icon */
+            max-width: 150px;
             height: auto;
             margin: 0 auto;
             display: block;
         }
         
-        /* Added style for the new text title since the PNG doesn't have text */
         .brand-name {
             font-family: 'Georgia', 'Times New Roman', serif;
             font-size: 2.5rem;
@@ -143,16 +142,21 @@
         h2 {
             color: #4A4A4A;
         }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- CHANGED: Linked to logo.png -->
         <img src="logo.png" alt="The Humble Hands Cleaning Co. Logo" class="logo">
-        
-        <!-- ADDED: Company Name text (Because the PNG is just an icon) -->
         <h1 class="brand-name">The Humble Hands</h1>
-        
         <p class="header-tagline">Professional Home Cleaning & Organizing Services</p>
     </header>
 
@@ -170,7 +174,7 @@
         </section>
 
         <section id="services">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Our Services</h2>
+            <h2 class="section-title">Our Services</h2>
             <div class="services">
                 <div class="service-card">
                     <h3>🧹 Deep Cleaning</h3>
@@ -194,8 +198,8 @@
         </section>
 
         <section id="contact">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Contact Us</h2>
-            <div style="text-align: center;">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
                 <p><strong>Email:</strong> info@humblehands.ca</p>
                 <p><strong>Phone:</strong> (705) 391-6736</p>
                 <p><strong>Service Area:</strong> Niagara Region</p>
