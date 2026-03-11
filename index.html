@@ -1,40 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humble Hands - Home Cleaning & Organizing</title>
-    
-    <!-- FAVICON CODE ADDED HERE -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Humble Hands – Professional home cleaning & organizing services in the Niagara Region. Book online today.">
+  <title>Humble Hands | Home Cleaning & Organizing – Niagara Region</title>
+
   <link rel="icon" type="image/png" href="logo.png">
-    
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Humble Hands Cleaning Co. Logo" class="logo">
-        <h1 class="brand-name">Humble Hands</h1>
-        <p class="header-tagline">Professional Home Cleaning & Organizing Services</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="https://tidycal.com/humblehands" target="_blank" class="nav-booking">Book Now</a>
-    </nav>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="logo.png" alt="Humble Hands Logo" class="nav-logo-img">
+        <div class="nav-logo-text">
+          <span class="nav-brand">Humble Hands</span>
+          <span class="nav-sub">Cleaning & Organizing</span>
+        </div>
+      </a>
 
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://tidycal.com/humblehands" target="_blank" rel="noopener" class="btn btn-nav">
+            Book Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-badge">✨ Serving the Niagara Region</span>
+      <h1>A Cleaner Home.<br><em>Without the Hassle.</em></h1>
+      <p>Professional cleaning & organizing services that give you
+         back your time, your space, and your peace of mind.</p>
+      <div class="hero-buttons">
+        <a href="https://tidycal.com/humblehands" target="_blank" rel="noopener" class="btn btn-primary">
+          Book a Cleaning
+        </a>
+        <a href="#services" class="btn btn-outline-hero">
+          See Services ↓
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <strong>100+</strong>
+          <span>Happy Homes</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>5.0 ★</strong>
+          <span>Client Rating</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>Niagara</strong>
+          <span>Local & Trusted</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
     <div class="container">
-        <section class="hero" id="home">
-            <h2>Welcome to Humble Hands</h2>
-            <p>Your trusted partner for a cleaner, more organized home</p>
-        </section>
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Everything you need to keep your home clean, organized, and welcoming.</p>
 
-        <section id="services">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services">
-                <div class="service-card">
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🧹</div>
+          <h3>Deep Cleaning</h3>
+          <p>A thorough top-to-bottom clean of every room. We get into the corners,
+             behind appliances, and all the spots that get missed.</p>
+          <ul class="service-includes">
+            <li>Kitchen & bathrooms scrubbed</li>
+            <li>Baseboards & light fixtures</li>
+            <li>Inside appliances (oven, fridge)</li>
+            <li>Windows & mirrors</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">✨</div>
+          <h3>Regular Maintenance</h3>
+          <p>Weekly or bi-weekly cleaning to keep your home consistently fresh
+             without you lifting a finger.</p>
+          <ul class="service-includes">
+            <li>All rooms dusted & vacuumed</li>
+            <li>Kitchens & bathrooms cleaned</li>
+            <li>Floors mopped</li>
+            <li>Beds made & tidied</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3>Home Organizing</h3>
+          <p>We declutter, sort, and create systems that keep your home
+             organized long after we leave.</p>
+          <ul class="service-includes">
+            <li>Closet & pantry organizing</li>
+            <li>Decluttering guidance</li>
+            <li>Storage solutions</li>
+            <li>Room-by-room systems</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <span class="section-tag">Simple Process</span>
+      <h2 class="section-title">How It Works</h2>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Book Online</h3>
+          <p>Pick your service and choose a date & time that works for you through our easy online booking.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>We Show Up</h3>
+          <p>Our team arrives on time with all supplies and equipment – you don't need to provide a thing.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Enjoy Your Space</h3>
+          <p>Come home to a spotless, organized space. It's that simple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <span class="section-tag">The Humble Difference</span>
+      <h2 class="section-title">Why Choose Humble Hands?</h2>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🌿</div>
+          <h4>Eco-Friendly Products</h4>
+          <p>Safe for your family, pets, and the environment.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h4>Insured & Trusted</h4>
+          <p>Fully insured with background-checked team members.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⏰</div>
+          <h4>Always On Time</h4>
+          <p>We respect your schedule and show up when we say we will.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💬</div>
+          <h4>Satisfaction Guaranteed</h4>
+          <p>Not happy? We'll come back and make it right – free of charge.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📋</div>
+          <h4>Customized Plans</h4>
+          <p>Every home is different. We tailor our service to your needs.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <h4>Transparent Pricing</h4>
+          <p>No hidden fees, no surprises. You know exactly what you're paying.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <span class="section-tag">Kind Words</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Humble Hands transformed my home. I didn't even recognize
+             my own kitchen after the deep clean. Absolutely incredible work!"</p>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong>
+            <span>St. Catharines</span>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I've tried other cleaning services and none compare. They're thorough,
+             professional, and so friendly. I'm a client for life."</p>
+          <div class="testimonial-author">
+            <strong>David & Karen L.</strong>
+            <span>Niagara Falls</span>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The organizing service was a game changer. They helped me declutter
+             my entire basement and set up a system I can actually maintain."</p>
+          <div class="testimonial-author">
+            <strong>Michelle T.</strong>
+            <span>Welland</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready for a Cleaner Home?</h2>
+      <p>Book your first cleaning in under 2 minutes. No commitment, no hassle.</p>
+      <a href="https://tidycal.com/humblehands" target="_blank" rel="noopener" class="btn btn-cta">
+        Book Your Cleaning Today
+      </a>
+      <span class="cta-note">or call us at <a href="tel:7053916736">(705) 391-6736</a></span>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-block">
+          <span class="section-tag">Get in Touch</span>
+          <h2>Contact Us</h2>
+          <p>Have questions? We'd love to hear from you.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:service.humblehands@gmail.com">service.humblehands@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:7053916736">(705) 391-6736</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Service Area</strong>
+                <span>Niagara Region, Ontario</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📅</span>
+              <div>
+                <strong>Book Online</strong>
+                <a href="https://tidycal.com/humblehands" target="_blank" rel="noopener">tidycal.com/humblehands</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Humble Hands Logo" class="footer-logo">
+          <p>Professional home cleaning & organizing services proudly serving the Niagara Region.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Deep Cleaning</a>
+          <a href="#services">Regular Maintenance</a>
+          <a href="#services">Home Organizing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Book Now</h4>
+          <a href="https://tidycal.com/humblehands" target="_blank" rel="noopener">Online Booking</a>
+          <a href="tel:7053916736">(705) 391-6736</a>
+          <a href="mailto:service.humblehands@gmail.com">Email Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Humble Hands. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>                <div class="service-card">
                     <h3>🧹 Deep Cleaning</h3>
                     <p>Thorough cleaning of every corner of your home, leaving it spotless and fresh.</p>
                 </div>
