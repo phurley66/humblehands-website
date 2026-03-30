@@ -144,3 +144,33 @@ h2 {
 .contact-info {
     text-align: center;
 }
+
+/* ABOUT SECTION */
+#about {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#about .section-title {
+    color: #4A4A4A;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F9F9F7;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #4A4A4A;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
