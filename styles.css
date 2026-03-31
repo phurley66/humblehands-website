@@ -56,25 +56,27 @@ header {
 /* ── Navigation ────────────────────────────────── */
 
 nav {
-  background: #4A4A4A;
-  padding: 1rem;
-  text-align: center;
+    background: #4A4A4A;
+    padding: 1rem;
+    text-align: center;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-  background: #748C68;
-  border-radius: 4px;
+    background: #748C68;
+    border-radius: 4px;
 }
 
 nav a.active {
-    background: #748C68;
+    background: #748C68 !important;
     border-radius: 4px;
 }
 
