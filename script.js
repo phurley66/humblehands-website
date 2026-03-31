@@ -4,13 +4,14 @@ const navLinks = document.querySelectorAll('nav a:not(.nav-booking)');
 
 // Listen for scroll events
 window.addEventListener('scroll', function() {
-    let current = '';
-
-    // Check which section is currently in view
+    let current = 'home';
+    
     sections.forEach(function(section) {
         const sectionTop = section.offsetTop;
-
-        if (window.scrollY >= sectionTop - 200) {
+        const sectionHeight = section.clientHeight;
+        const scrollPosition = window.scrollY + 300;
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
         }
     });
@@ -23,3 +24,6 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+// Run once on page load
+window.dispatchEvent(new Event('scroll'));
