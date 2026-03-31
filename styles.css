@@ -92,6 +92,40 @@ nav a.active {
     background: #748C68 !important;
     border-radius: 4px;
 }
+.nav-quote-btn {
+    background-color: #748C6B;
+    color: #FFFFFF !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.nav-quote-btn:hover {
+    background-color: #637a5c;
+    box-shadow: 0 4px 12px rgba(116, 140, 107, 0.3);
+}
+
+.quote-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #748C6B;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.quote-btn:hover {
+    background-color: #637a5c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 140, 107, 0.3);
+}
 
 /* ── Layout ────────────────────────────────────── */
 
