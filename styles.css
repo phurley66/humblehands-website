@@ -92,39 +92,24 @@ nav a.active {
     background: #748C68 !important;
     border-radius: 4px;
 }
+
+/* ── Navigation Quote Button ───────────────────── */
+
 .nav-quote-btn {
-    background-color: #748C6B;
-    color: #FFFFFF !important;
-    padding: 10px 22px;
-    border-radius: 8px;
+    background: #748C68;
+    color: white !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 0.95rem;
-    transition: all 0.2s ease;
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: background 0.3s ease;
 }
 
 .nav-quote-btn:hover {
-    background-color: #637a5c;
-    box-shadow: 0 4px 12px rgba(116, 140, 107, 0.3);
-}
-
-.quote-btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: #748C6B;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-.quote-btn:hover {
-    background-color: #637a5c;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(116, 140, 107, 0.3);
+    background: #5e7353;
 }
 
 /* ── Layout ────────────────────────────────────── */
@@ -153,6 +138,24 @@ nav a.active {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #748C68;
+}
+
+/* ── Hero Quote Button ─────────────────────────── */
+
+.hero-quote-btn {
+    display: inline-block;
+    background: #748C68;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero-quote-btn:hover {
+    background: #5e7353;
 }
 
 /* ── Services ──────────────────────────────────── */
@@ -258,7 +261,13 @@ nav a.active {
 }
 
 .cta h2 {
+    color: white;
     margin-bottom: 1rem;
+}
+
+.cta p {
+    color: white;
+    margin-bottom: 0.5rem;
 }
 
 .button {
@@ -270,6 +279,7 @@ nav a.active {
     border-radius: 4px;
     font-weight: bold;
     margin-top: 1rem;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
@@ -308,5 +318,75 @@ footer {
 
     .about-image img {
         width: 240px;
+    }
+
+    nav {
+        padding: 0.75rem 0.5rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.6rem;
+        margin: 0 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-quote-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        margin: 0.3rem 0.2rem;
+    }
+
+    .cta {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+    }
+
+    .about-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 0.2rem auto;
+        text-align: center;
+        max-width: 200px;
+    }
+
+    .nav-quote-btn {
+        display: block;
+        margin: 0.4rem auto;
+        text-align: center;
+        max-width: 200px;
+    }
+
+    .hero-quote-btn {
+        display: block;
+        max-width: 250px;
+        margin: 1rem auto 0;
+        text-align: center;
+    }
+
+    .button {
+        display: block;
+        max-width: 250px;
+        margin: 1rem auto 0;
+        text-align: center;
+    }
+
+    .brand-name {
+        font-size: 1.7rem;
     }
 }
