@@ -1,6 +1,6 @@
-// Get all sections and nav links
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('nav a');
+// Get all sections WITH IDs and nav links (excluding booking button)
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a:not(.nav-booking)');
 
 // Listen for scroll events
 window.addEventListener('scroll', () => {
@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
     // Check which section is currently in view
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
 
         if (window.scrollY >= sectionTop - 200) {
             current = section.getAttribute('id');
