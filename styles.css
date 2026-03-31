@@ -73,6 +73,11 @@ nav a:hover {
   border-radius: 4px;
 }
 
+nav a.active {
+    background: #748C68;
+    border-radius: 4px;
+}
+
 /* ── Layout ────────────────────────────────────── */
 
 .container {
