@@ -149,43 +149,69 @@ h2 {
     text-align: center;
 }
 
-/* About Section */
 #about {
-    padding: 60px 20px;
-    background-color: #f9f7f4;
+    padding: 80px 20px;
+    background-color: #fcfcfc; /* Light off-white for a clean look */
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #5c4a3d;
-    font-size: 2rem;
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between image and text */
+    flex-wrap: wrap; /* Keeps it mobile-friendly */
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Slight softening of corners */
+    /* Optional: subtle shadow to make the sketch pop */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-    color: #4a4a4a;
+    flex: 1.5;
+    min-width: 300px;
 }
 
-.about-content p {
+.section-title {
+    color: #748C68; /* Your Brand Green */
+    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
-/* Mission Statement Highlight */
-.about-content p strong {
-    color: #5c4a3d;
-    font-size: 1.1rem;
+.about-content p {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
 }
 
-/* Closing Tagline */
-.about-content p em {
+.mission-text strong {
+    color: #748C68; /* Highlighting the mission in your brand color */
     display: block;
-    text-align: center;
-    font-size: 1.15rem;
-    color: #7a6455;
+    margin-bottom: 8px;
+}
+
+.tagline {
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #d4c8bc;
+    border-top: 1px solid #748C68;
+    text-align: center;
+    color: #748C68;
+    font-size: 1.2rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
