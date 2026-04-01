@@ -117,7 +117,8 @@ nav a.active {
     border-color: #5e7353;
 }
 
-/* Nav links container — horizontal row on desktop */
+/* ── Nav Links Container ───────────────────────── */
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -126,7 +127,8 @@ nav a.active {
     justify-content: center;
 }
 
-/* Hamburger button — hidden on desktop */
+/* ── Hamburger Button — hidden on desktop ──────── */
+
 .hamburger {
     display: none;
     background: none;
@@ -140,7 +142,7 @@ nav a.active {
     display: block;
     width: 24px;
     height: 3px;
-    background: #4A4A4A;
+    background: #ffffff; /* FIX: was #4A4A4A — invisible on dark nav */
     border-radius: 2px;
     margin: 4px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -639,7 +641,8 @@ a.contact-card:hover p {
 /* ── Responsive ────────────────────────────────── */
 
 @media (max-width: 768px) {
-    /* About Section */
+
+    /* About */
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -659,7 +662,7 @@ a.contact-card:hover p {
         padding: 30px 20px;
     }
 
-    /* Navigation - Mobile Menu */
+    /* Navigation */
     nav {
         position: relative;
         display: flex;
@@ -705,7 +708,6 @@ a.contact-card:hover p {
         border-bottom: none;
     }
 
-    /* Quote button on mobile */
     .nav-links .nav-quote-btn {
         background: #748C68;
         color: #ffffff !important;
@@ -716,7 +718,6 @@ a.contact-card:hover p {
         border-bottom: none;
     }
 
-    /* Book Now button on mobile */
     .nav-links .nav-booking {
         background: #ffffff;
         color: #748C68 !important;
@@ -746,13 +747,33 @@ a.contact-card:hover p {
         font-size: 2rem;
     }
 
-    /* Contact Grid */
+    /* Contact — FIX: switch to single column so cards aren't squished */
     .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .contact-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 20px 16px;
+        gap: 16px;
+    }
+
+    .contact-icon {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
+
     /* Pricing */
     .service-card-grid {
         grid-template-columns: 1fr;
@@ -772,20 +793,6 @@ a.contact-card:hover p {
 }
 
 @media (max-width: 480px) {
-    /* Navigation */
-    nav a {
-        display: block;
-        margin: 0.2rem auto;
-        text-align: center;
-        max-width: 200px;
-    }
-
-    .nav-quote-btn {
-        display: block;
-        margin: 0.4rem auto;
-        text-align: center;
-        max-width: 200px;
-    }
 
     /* Buttons */
     .hero-quote-btn {
@@ -808,33 +815,6 @@ a.contact-card:hover p {
     }
 
     /* Contact */
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .contact-card {
-        padding: 24px 12px;
-    }
-
-    .contact-icon {
-        width: 44px;
-        height: 44px;
-    }
-
-    .contact-icon svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .contact-card h3 {
-        font-size: 0.85rem;
-    }
-
-    .contact-card p {
-        font-size: 0.75rem;
-    }
-
     .contact-cta {
         padding: 28px 16px;
     }
