@@ -74,7 +74,7 @@ nav {
     text-align: center;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1.2rem;
@@ -86,12 +86,12 @@ nav a {
     font-size: 0.95rem;
 }
 
-nav a:hover {
+.nav-links a:hover {
     background: #748C68;
     border-color: #748C68;
 }
 
-nav a.active {
+.nav-links a.active {
     background: #748C68 !important;
     border-color: #748C68 !important;
 }
@@ -103,7 +103,7 @@ nav a.active {
     color: white !important;
     padding: 0.5rem 1.2rem;
     border-radius: 4px;
-    border: 1px solid #748C68;
+    border: 1px solid #748C68 !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.95rem;
@@ -114,7 +114,28 @@ nav a.active {
 
 .nav-quote-btn:hover {
     background: #5e7353;
-    border-color: #5e7353;
+    border-color: #5e7353 !important;
+}
+
+/* ── Navigation Booking Button ─────────────────── */
+
+.nav-booking {
+    background: transparent;
+    color: white !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0 0.3rem;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.nav-booking:hover {
+    background: #748C68;
+    border-color: #748C68 !important;
 }
 
 /* ── Layout ────────────────────────────────────── */
@@ -325,22 +346,6 @@ footer {
         width: 240px;
     }
 
-    nav {
-        padding: 0.75rem 0.5rem;
-    }
-
-    nav a {
-        padding: 0.4rem 0.6rem;
-        margin: 0 0.2rem;
-        font-size: 0.9rem;
-    }
-
-    .nav-quote-btn {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
-        margin: 0.3rem 0.2rem;
-    }
-
     .cta {
         padding: 2rem 1.5rem;
     }
@@ -363,20 +368,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    nav a {
-        display: block;
-        margin: 0.2rem auto;
-        text-align: center;
-        max-width: 200px;
-    }
-
-    .nav-quote-btn {
-        display: block;
-        margin: 0.4rem auto;
-        text-align: center;
-        max-width: 200px;
-    }
-
     .hero-quote-btn {
         display: block;
         max-width: 250px;
@@ -395,200 +386,195 @@ footer {
         font-size: 1.7rem;
     }
 }
+
 /* =====================
    PRICING SECTION
    ===================== */
 
 .pricing-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .pricing-intro {
-  text-align: center;
-  color: #4C4C4C;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
+    text-align: center;
+    color: #4C4C4C;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
 }
 
 /* ---------- Service Card Grid ---------- */
 
 .service-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
 }
 
-/* Inherits your existing .service-card base styles.
-   The rules below ADD pricing-specific styling. */
-
 .pricing-section .service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 32px 24px;
-  border: 1px solid #e2e2d8;
-  border-radius: 4px;
-  background: #ffffff;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 24px;
+    border: 1px solid #e2e2d8;
+    border-radius: 4px;
+    background: #ffffff;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .pricing-section .service-card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
 }
 
 .pricing-section .service-card h3 {
-  color: #748C68;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.25rem;
-  margin: 0 0 12px 0;
+    color: #748C68;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 12px 0;
 }
 
 .price-starting {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.85rem;
-  color: #999;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: #999;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .price-amount {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #748C68;
-  margin: 4px 0 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #748C68;
+    margin: 4px 0 20px 0;
 }
 
 .price-includes {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .price-includes li {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
-  color: #4C4C4C;
-  padding: 8px 0;
-  border-top: 1px solid #f0f0e8;
-  line-height: 1.5;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    color: #4C4C4C;
+    padding: 8px 0;
+    border-top: 1px solid #f0f0e8;
+    line-height: 1.5;
 }
 
 .price-includes li:last-child {
-  border-bottom: 1px solid #f0f0e8;
+    border-bottom: 1px solid #f0f0e8;
 }
 
 /* ---------- Discount Banner ---------- */
 
 .discount-banner {
-  background: #748C68;
-  border-radius: 4px;
-  padding: 36px 24px;
-  text-align: center;
-  margin-bottom: 48px;
+    background: #748C68;
+    border-radius: 4px;
+    padding: 36px 24px;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 .discount-banner h3 {
-  font-family: 'Segoe UI', sans-serif;
-  color: #ffffff;
-  font-size: 1.3rem;
-  margin: 0 0 24px 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 24px 0;
 }
 
 .discount-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .discount-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .discount-percent {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .discount-label {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.85);
-  margin-top: 4px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 4px;
 }
 
 /* ---------- Pricing CTA ---------- */
 
 .pricing-cta {
-  text-align: center;
+    text-align: center;
 }
 
 .pricing-cta p {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.1rem;
-  color: #4C4C4C;
-  margin: 0 0 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    color: #4C4C4C;
+    margin: 0 0 20px 0;
 }
 
-/* Uses your existing .hero-quote-btn class for the button.
-   Adding one override for sizing in this context. */
-
 .pricing-cta .hero-quote-btn {
-  display: inline-block;
-  padding: 14px 36px;
-  font-size: 1.05rem;
-  text-decoration: none;
-  border-radius: 4px;
-  background: #748C68;
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
-  font-weight: 600;
-  transition: background 0.2s ease;
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #748C68;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    transition: background 0.2s ease;
 }
 
 .pricing-cta .hero-quote-btn:hover {
-  background: #637a59;
+    background: #637a59;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Pricing Responsive ---------- */
 
 @media (max-width: 600px) {
-  .service-card-grid {
-    grid-template-columns: 1fr;
-  }
+    .service-card-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .discount-grid {
-    gap: 24px;
-  }
+    .discount-grid {
+        gap: 24px;
+    }
 
-  .price-amount {
-    font-size: 2rem;
-  }
+    .price-amount {
+        font-size: 2rem;
+    }
 
-  .pricing-section {
-    padding: 40px 16px;
-  }
+    .pricing-section {
+        padding: 40px 16px;
+    }
 }
+
 /* =====================
-   MOBILE NAV / HAMBURGER
+   HAMBURGER & MOBILE NAV
    ===================== */
 
-/* Hamburger button — hidden on desktop */
 .hamburger {
     display: none;
     background: none;
@@ -602,13 +588,12 @@ footer {
     display: block;
     width: 24px;
     height: 3px;
-    background: #4C4C4C;
+    background: #ffffff;
     border-radius: 2px;
     margin: 4px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Animate hamburger into X when open */
 .hamburger.active .hamburger-line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -621,26 +606,21 @@ footer {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Nav links container — horizontal row on desktop */
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* =====================
-   MOBILE BREAKPOINT
-   ===================== */
 @media (max-width: 768px) {
-
     nav {
         position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 10px 20px;
+        padding: 12px 20px;
     }
 
     .hamburger {
@@ -656,7 +636,7 @@ footer {
         left: 0;
         right: 0;
         background: #FAFAF3;
-        padding: 16px 20px;
+        padding: 8px 20px 16px 20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         gap: 0;
@@ -667,35 +647,32 @@ footer {
     }
 
     .nav-links a {
+        display: block;
         padding: 12px 16px;
+        border: none;
         border-bottom: 1px solid #eaeae1;
+        border-radius: 0;
+        margin: 0;
         text-align: left;
         font-size: 1rem;
         color: #4C4C4C;
+        background: transparent;
         text-decoration: none;
         font-family: 'Segoe UI', sans-serif;
+        font-weight: 400;
     }
 
     .nav-links a:last-child {
         border-bottom: none;
     }
 
-    /* Quote button on mobile */
-    .nav-links .nav-quote-btn {
-        background: #748C68;
-        color: #ffffff !important;
-        border-radius: 4px;
-        text-align: center;
-        margin-top: 8px;
-        padding: 12px 16px;
-        border-bottom: none;
+    .nav-links a:hover {
+        background: #f0f4ed;
     }
 
-    /* Book Now button on mobile */
-    .nav-links .nav-booking {
-        background: #ffffff;
-        color: #748C68 !important;
-        border: 2px solid #748C68;
+    .nav-links .nav-quote-btn {
+        background: #748C68 !important;
+        color: #ffffff !important;
         border-radius: 4px;
         text-align: center;
         margin-top: 8px;
@@ -703,7 +680,19 @@ footer {
         border-bottom: none;
         font-weight: 600;
     }
+
+    .nav-links .nav-booking {
+        background: #ffffff !important;
+        color: #748C68 !important;
+        border: 2px solid #748C68 !important;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 8px;
+        padding: 12px 16px;
+        font-weight: 600;
+    }
 }
+
 /* =====================
    CONTACT SECTION
    ===================== */
@@ -711,7 +700,7 @@ footer {
 .contact-section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 20px 0 20px;
 }
 
 .contact-intro {
@@ -830,7 +819,7 @@ a.contact-card:hover p {
     transform: translateY(-2px);
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Contact Responsive ---------- */
 
 @media (max-width: 900px) {
     .contact-grid {
@@ -873,7 +862,4 @@ a.contact-card:hover p {
     .contact-cta p {
         font-size: 0.95rem;
     }
-}
-.contact-section {
-    padding: 60px 20px 0 20px;
 }
