@@ -823,3 +823,23 @@ a.contact-card:hover p {
         font-size: 0.95rem;
     }
 }
+/* ── About Image Mobile Reorder ─────────────────── */
+
+@media (max-width: 768px) {
+    .about-img-wrap {
+        order: 2;
+        width: 100% !important;
+    }
+
+    .about-img-wrap img {
+        width: 100% !important;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .about-text-wrap {
+        order: 1;
+        min-width: unset !important;
+        max-width: 100% !important;
+    }
+}
