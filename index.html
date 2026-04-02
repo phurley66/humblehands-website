@@ -67,92 +67,460 @@
             </div>
         </section>
 
-        <!-- PRICING -->
-        <section class="pricing-section fade-in" id="pricing">
-            <h2 class="section-title">Our Starting Prices</h2>
-            <p class="pricing-intro">
-                Every home is different. The prices below reflect our starting rates for a
-                well-maintained, 1-bedroom, 1-bathroom home. Your actual quote depends on
-                size, condition, and service type.
-                <strong>Get your exact price in under 60 seconds.</strong>
-            </p>
+     <!-- ============================================================
+     PRICING SECTION — humblehands.ca
+     Updated to match new multipliers and starting prices
+     Uses existing CSS classes: .service-card, .section-title,
+     .container, .services, .cta, .button, .hero-quote-btn
+     ============================================================ -->
 
-            <div class="service-card-grid">
+<style>
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 
-                <div class="service-card">
-                    <h3>Standard Clean</h3>
-                    <p class="price-starting">Starting at</p>
-                    <p class="price-amount">$120</p>
-                    <ul class="price-includes">
-                        <li>Dusting &amp; wiping all surfaces</li>
-                        <li>Vacuuming &amp; mopping floors</li>
-                        <li>Kitchen &amp; bathroom cleaning</li>
-                        <li>Ideal for regular upkeep</li>
-                    </ul>
-                </div>
+  @media (max-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
-                <div class="service-card">
-                    <h3>Deep Clean</h3>
-                    <p class="price-starting">Starting at</p>
-                    <p class="price-amount">$204</p>
-                    <ul class="price-includes">
-                        <li>Everything in a Standard Clean</li>
-                        <li>Inside appliances &amp; cabinets</li>
-                        <li>Baseboards, vents &amp; light fixtures</li>
-                        <li>Perfect for a fresh start</li>
-                    </ul>
-                </div>
+  @media (max-width: 420px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 
-                <div class="service-card">
-                    <h3>Move-In / Move-Out</h3>
-                    <p class="price-starting">Starting at</p>
-                    <p class="price-amount">$240</p>
-                    <ul class="price-includes">
-                        <li>Top-to-bottom deep clean</li>
-                        <li>Inside all closets &amp; storage</li>
-                        <li>Appliance deep cleaning</li>
-                        <li>Leave-it-spotless guarantee</li>
-                    </ul>
-                </div>
+<section id="pricing" style="background-color: #FAFAF3; padding: 4rem 0;">
+  <div class="container">
 
-                <div class="service-card">
-                    <h3>Organization</h3>
-                    <p class="price-starting">Starting at</p>
-                    <p class="price-amount">$180</p>
-                    <ul class="price-includes">
-                        <li>Decluttering &amp; sorting</li>
-                        <li>Closet &amp; pantry organization</li>
-                        <li>Storage solutions &amp; labelling</li>
-                        <li>Create calm, functional spaces</li>
-                    </ul>
-                </div>
+    <h2 class="section-title">Simple, Honest Pricing</h2>
+    <p style="
+      text-align: center;
+      color: #4C4C4C;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto 1rem auto;
+      line-height: 1.7;
+    ">
+      Prices below are <strong>starting points</strong> based on a
+      1-bedroom, 1-bathroom home in well-maintained condition, cleaned one time.
+    </p>
 
-            </div>
+    <p style="
+      text-align: center;
+      color: #748C68;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.95rem;
+      margin: 0 auto 3rem auto;
+      max-width: 480px;
+    ">
+      Fill out our quick quote form and we'll send your custom price
+      within a few hours — no phone call needed.
+    </p>
 
-            <div class="discount-banner">
-                <h3>Save More with Recurring Service</h3>
-                <div class="discount-grid">
-                    <div class="discount-item">
-                        <span class="discount-percent">20% OFF</span>
-                        <span class="discount-label">Weekly</span>
-                    </div>
-                    <div class="discount-item">
-                        <span class="discount-percent">15% OFF</span>
-                        <span class="discount-label">Bi-Weekly</span>
-                    </div>
-                    <div class="discount-item">
-                        <span class="discount-percent">10% OFF</span>
-                        <span class="discount-label">Monthly</span>
-                    </div>
-                </div>
-            </div>
+    <!-- ── 4-column grid, 2-column on tablet, 1-column on mobile ── -->
+    <div class="pricing-grid">
 
-            <div class="pricing-cta">
-                <p>Want your exact price? It takes less than 60 seconds.</p>
-                <a href="https://phurley66.github.io/humble-hands-quote/" class="hero-quote-btn">Get Your Free Quote</a>
-            </div>
+      <!-- Card 1 — Standard Clean -->
+      <div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🧹</div>
+        <h3 style="
+          color: #748C68;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 1.1rem;
+          margin: 0 0 0.6rem 0;
+        ">Standard Clean</h3>
 
-        </section>
+        <p style="
+          color: #4C4C4C;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 0.88rem;
+          line-height: 1.55;
+          flex-grow: 1;
+          margin: 0 0 1rem 0;
+        ">
+          Dusting, vacuuming, mopping, kitchen and bathrooms.
+          Great for regular upkeep.
+        </p>
+
+        <div style="
+          background-color: #f0f4ee;
+          border-radius: 4px;
+          padding: 0.75rem 0.5rem;
+          margin-bottom: 1rem;
+        ">
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #748C68;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.15rem;
+          ">Starting at</span>
+          <span style="
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #748C68;
+            line-height: 1;
+          ">$120</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.25rem;
+          ">1 bed · 1 bath · one-time</span>
+        </div>
+
+        <a
+          href="https://quote.humblehands.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-quote-btn"
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 0.65rem 0.75rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.88rem;
+            border-radius: 4px;
+            margin-top: auto;
+          "
+        >
+          Request My Quote →
+        </a>
+      </div>
+      <!-- /Card 1 -->
+
+      <!-- Card 2 — Deep Clean -->
+      <div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">✨</div>
+        <h3 style="
+          color: #748C68;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 1.1rem;
+          margin: 0 0 0.6rem 0;
+        ">Deep Clean</h3>
+
+        <p style="
+          color: #4C4C4C;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 0.88rem;
+          line-height: 1.55;
+          flex-grow: 1;
+          margin: 0 0 1rem 0;
+        ">
+          Baseboards, inside appliances, window sills, and hard-to-reach areas.
+          Ideal for a fresh start.
+        </p>
+
+        <div style="
+          background-color: #f0f4ee;
+          border-radius: 4px;
+          padding: 0.75rem 0.5rem;
+          margin-bottom: 1rem;
+        ">
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #748C68;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.15rem;
+          ">Starting at</span>
+          <span style="
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #748C68;
+            line-height: 1;
+          ">$180</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.25rem;
+          ">1 bed · 1 bath · one-time</span>
+        </div>
+
+        <a
+          href="https://quote.humblehands.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-quote-btn"
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 0.65rem 0.75rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.88rem;
+            border-radius: 4px;
+            margin-top: auto;
+          "
+        >
+          Request My Quote →
+        </a>
+      </div>
+      <!-- /Card 2 -->
+
+      <!-- Card 3 — Move-In / Move-Out -->
+      <div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">📦</div>
+        <h3 style="
+          color: #748C68;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 1.1rem;
+          margin: 0 0 0.6rem 0;
+        ">Move-In / Move-Out</h3>
+
+        <p style="
+          color: #4C4C4C;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 0.88rem;
+          line-height: 1.55;
+          flex-grow: 1;
+          margin: 0 0 1rem 0;
+        ">
+          Full clean for empty homes before or after a move.
+          Leave on good terms or start fresh.
+        </p>
+
+        <div style="
+          background-color: #f0f4ee;
+          border-radius: 4px;
+          padding: 0.75rem 0.5rem;
+          margin-bottom: 1rem;
+        ">
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #748C68;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.15rem;
+          ">Starting at</span>
+          <span style="
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #748C68;
+            line-height: 1;
+          ">$205</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.25rem;
+          ">1 bed · 1 bath · one-time</span>
+        </div>
+
+        <a
+          href="https://quote.humblehands.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-quote-btn"
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 0.65rem 0.75rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.88rem;
+            border-radius: 4px;
+            margin-top: auto;
+          "
+        >
+          Request My Quote →
+        </a>
+      </div>
+      <!-- /Card 3 -->
+
+    <!-- Card 4 — Organization -->
+<div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
+  <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🗂️</div>
+  <h3 style="
+    color: #748C68;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    margin: 0 0 0.6rem 0;
+  ">Organization</h3>
+
+  <p style="
+    color: #4C4C4C;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    flex-grow: 1;
+    margin: 0 0 1rem 0;
+  ">
+    Pantries, closets, home offices — we declutter and organize
+    one space at a time into something calm and functional.
+  </p>
+
+  <div style="
+    background-color: #f0f4ee;
+    border-radius: 4px;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 1rem;
+  ">
+    <span style="
+      display: block;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.72rem;
+      color: #748C68;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.15rem;
+    ">Starting at</span>
+    <span style="
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #748C68;
+      line-height: 1;
+    ">$75</span>
+    <span style="
+      display: block;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.72rem;
+      color: #888;
+      margin-top: 0.25rem;
+    ">per space · pantry, closet, office, etc.</span>
+    <span style="
+      display: block;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.72rem;
+      color: #888;
+      margin-top: 0.15rem;
+      font-style: italic;
+    ">Larger projects quoted individually.</span>
+  </div>
+
+  <a
+    href="https://quote.humblehands.ca"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="hero-quote-btn"
+    style="
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      padding: 0.65rem 0.75rem;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.88rem;
+      border-radius: 4px;
+      margin-top: auto;
+    "
+  >
+    Request My Quote →
+  </a>
+</div>
+<!-- /Card 4 -->
+       
+    </div>
+    <!-- /pricing-grid -->
+
+    <!-- ── Shared recurring savings note ── -->
+    <div style="
+      margin: 2rem auto 0 auto;
+      max-width: 600px;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.88rem;
+      color: #4C4C4C;
+      background-color: #F9F9F7;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      line-height: 1.8;
+    ">
+      <span style="color: #748C68; font-weight: 600;">Save on recurring bookings:</span>
+      &nbsp; Weekly — 20% off &nbsp;·&nbsp;
+      Bi-weekly — 15% off
+      <span style="
+        background-color: #748C68;
+        color: #fff;
+        font-size: 0.7rem;
+        padding: 0.1em 0.45em;
+        border-radius: 3px;
+        vertical-align: middle;
+      ">popular</span>
+      &nbsp;·&nbsp; Monthly — 10% off
+      <br>
+      <span style="color: #888; font-size: 0.82rem;">
+        How your price is calculated: bedroom size + bathroom add-on +
+        home condition + service type. No surprises, no hidden fees.
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CTA Banner ── -->
+<section class="cta">
+  <div class="container" style="text-align: center;">
+    <h2 style="
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem 0;
+      color: #fff;
+    ">
+      Get your custom quote sent straight to your inbox.
+    </h2>
+    <p style="
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.88);
+      max-width: 520px;
+      margin: 0 auto 1.75rem auto;
+      line-height: 1.7;
+    ">
+      Answer five quick questions and we'll send your custom price
+      within a few hours. Simple, transparent, and no obligation.
+    </p>
+    <a
+      href="https://quote.humblehands.ca"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button"
+      style="
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.85rem 2.25rem;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 4px;
+        letter-spacing: 0.02em;
+      "
+    >
+      Request My Free Quote →
+    </a>
+    <p style="
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      margin: 1rem 0 0 0;
+    ">
+      Serving the Niagara Region &nbsp;·&nbsp; No obligation &nbsp;·&nbsp;
+      Response within a few hours
+    </p>
+  </div>
+</section>
 
   <!-- ABOUT -->
 <section id="about" class="fade-in" style="padding: 40px 0;">
