@@ -94,6 +94,31 @@
   }
 </style>
 
+<!-- ============================================================
+     PRICING SECTION — humblehands.ca
+     Updated to match new pricing model
+     ============================================================ -->
+
+<style>
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 420px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <section id="pricing" style="background-color: #FAFAF3; padding: 4rem 0;">
   <div class="container">
 
@@ -107,8 +132,9 @@
       margin: 0 auto 1rem auto;
       line-height: 1.7;
     ">
-      Prices below are <strong>starting points</strong> based on a
-      1-bedroom, 1-bathroom home in well-maintained condition, cleaned one time.
+      Prices shown are for a <strong>2-bedroom, 2-bathroom home</strong> in well-maintained condition.
+      Standard Clean pricing is for <strong>weekly recurring service</strong>.
+      Deep Clean and Move-in/out pricing are for <strong>one-time service</strong>.
     </p>
 
     <p style="
@@ -152,7 +178,7 @@
           background-color: #f0f4ee;
           border-radius: 4px;
           padding: 0.75rem 0.5rem;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         ">
           <span style="
             display: block;
@@ -170,6 +196,14 @@
             color: #748C68;
             line-height: 1;
           ">$120</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.35rem;
+            font-style: italic;
+          ">per visit · weekly service</span>
         </div>
 
         <a
@@ -193,15 +227,30 @@
       </div>
       <!-- /Card 1 -->
 
-      <!-- Card 2 — Deep Clean -->
-      <div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
-        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">✨</div>
-        <h3 style="
-          color: #748C68;
-          font-family: 'Segoe UI', sans-serif;
-          font-size: 1.1rem;
-          margin: 0 0 0.6rem 0;
-        ">Deep Clean</h3>
+     <!-- Card 2 — Deep Clean -->
+<div class="service-card" style="
+  display: flex; 
+  flex-direction: column; 
+  text-align: center;
+  border: 2px solid #748C68;
+  box-shadow: 0 4px 12px rgba(116, 140, 104, 0.2);
+  position: relative;
+">
+  
+  <!-- BANNER -->
+  <div style="
+    background-color: #748C68;
+    color: white;
+    padding: 0.4rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  ">✨ Best for First Visit</div>
+  
+  <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">✨</div>
+  <!-- rest of card -->
 
         <p style="
           color: #4C4C4C;
@@ -219,7 +268,7 @@
           background-color: #f0f4ee;
           border-radius: 4px;
           padding: 0.75rem 0.5rem;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         ">
           <span style="
             display: block;
@@ -236,7 +285,15 @@
             font-weight: 700;
             color: #748C68;
             line-height: 1;
-          ">$180</span>
+          ">$175</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.35rem;
+            font-style: italic;
+          ">one-time service</span>
         </div>
 
         <a
@@ -286,7 +343,7 @@
           background-color: #f0f4ee;
           border-radius: 4px;
           padding: 0.75rem 0.5rem;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         ">
           <span style="
             display: block;
@@ -303,7 +360,15 @@
             font-weight: 700;
             color: #748C68;
             line-height: 1;
-          ">$205</span>
+          ">$175</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.35rem;
+            font-style: italic;
+          ">one-time service</span>
         </div>
 
         <a
@@ -327,87 +392,87 @@
       </div>
       <!-- /Card 3 -->
 
-    <!-- Card 4 — Organization -->
-<div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
-  <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🗂️</div>
-  <h3 style="
-    color: #748C68;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1.1rem;
-    margin: 0 0 0.6rem 0;
-  ">Organization</h3>
+      <!-- Card 4 — Organization -->
+      <div class="service-card" style="display: flex; flex-direction: column; text-align: center;">
+        <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🗂️</div>
+        <h3 style="
+          color: #748C68;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 1.1rem;
+          margin: 0 0 0.6rem 0;
+        ">Organization</h3>
 
-  <p style="
-    color: #4C4C4C;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 0.88rem;
-    line-height: 1.55;
-    flex-grow: 1;
-    margin: 0 0 1rem 0;
-  ">
-    Pantries, closets, home offices — we declutter and organize
-    one space at a time into something calm and functional.
-  </p>
+        <p style="
+          color: #4C4C4C;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 0.88rem;
+          line-height: 1.55;
+          flex-grow: 1;
+          margin: 0 0 1rem 0;
+        ">
+          Pantries, closets, home offices — we declutter and organize
+          one space at a time into something calm and functional.
+        </p>
 
-  <div style="
-    background-color: #f0f4ee;
-    border-radius: 4px;
-    padding: 0.75rem 0.5rem;
-    margin-bottom: 1rem;
-  ">
-    <span style="
-      display: block;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 0.72rem;
-      color: #748C68;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.15rem;
-    ">Starting at</span>
-    <span style="
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #748C68;
-      line-height: 1;
-    ">$75</span>
-    <span style="
-      display: block;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 0.72rem;
-      color: #888;
-      margin-top: 0.25rem;
-    ">per space · pantry, closet, office, etc.</span>
-    <span style="
-      display: block;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 0.72rem;
-      color: #888;
-      margin-top: 0.15rem;
-      font-style: italic;
-    ">Larger projects quoted individually.</span>
-  </div>
+        <div style="
+          background-color: #f0f4ee;
+          border-radius: 4px;
+          padding: 0.75rem 0.5rem;
+          margin-bottom: 0.5rem;
+        ">
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #748C68;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.15rem;
+          ">Starting at</span>
+          <span style="
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #748C68;
+            line-height: 1;
+          ">$75</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.25rem;
+          ">per space · pantry, closet, office, etc.</span>
+          <span style="
+            display: block;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 0.15rem;
+            font-style: italic;
+          ">Larger projects quoted individually.</span>
+        </div>
 
-  <a
-    href="https://quote.humblehands.ca"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="hero-quote-btn"
-    style="
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      padding: 0.65rem 0.75rem;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 0.88rem;
-      border-radius: 4px;
-      margin-top: auto;
-    "
-  >
-    Request My Quote →
-  </a>
-</div>
-<!-- /Card 4 -->
+        <a
+          href="https://quote.humblehands.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-quote-btn"
+          style="
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 0.65rem 0.75rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.88rem;
+            border-radius: 4px;
+            margin-top: auto;
+          "
+        >
+          Request My Quote →
+        </a>
+      </div>
+      <!-- /Card 4 -->
        
     </div>
     <!-- /pricing-grid -->
